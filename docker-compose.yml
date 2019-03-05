@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  app:
+    image: aguilas:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      - HOST=0.0.0.0
+    volumes:
+      - ./:/usr/src/app/
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    command: yarn run dev
