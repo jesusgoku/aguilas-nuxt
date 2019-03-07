@@ -6,11 +6,10 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    environment:
-      - HOST=0.0.0.0
+    user: "node"
     volumes:
-      - ./:/usr/src/app/
-      - /usr/src/app/node_modules
+      - .:/home/node/app
+      - /home/node/app/node_modules
     ports:
       - "3000:3000"
     command: yarn run dev
