@@ -1,8 +1,8 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header />
 
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
@@ -11,8 +11,8 @@ import Header from '~/components/Header';
 
 export default {
   components: {
-    AppHeader: Header
-  }
+    AppHeader: Header,
+  },
 };
 </script>
 
