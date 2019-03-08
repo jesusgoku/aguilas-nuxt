@@ -7,7 +7,7 @@ const app = express();
 const config = require('../nuxt.config.js');
 config.dev = !(process.env.NODE_ENV === 'production');
 
-async function start() {
+(async () => {
   // Init Nuxt.js
   const nuxt = new Nuxt(config);
 
@@ -33,5 +33,4 @@ async function start() {
     message: `Server listening on http://${host}:${port}`,
     badge: true,
   });
-}
-start();
+})();
