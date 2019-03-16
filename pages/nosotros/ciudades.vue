@@ -1,5 +1,5 @@
 <template>
   <h1 class="h1">
-    Inicio
+    Ciudades
   </h1>
 </template>
