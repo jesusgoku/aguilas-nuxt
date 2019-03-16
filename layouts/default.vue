@@ -2,7 +2,13 @@
   <div>
     <app-header />
 
-    <nuxt />
+    <section class="container">
+      <div class="row">
+        <div class="col-12">
+          <nuxt />
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
